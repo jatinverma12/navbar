@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body { 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif; 
   letter-spacing: 2px;
   word-spacing: 2px;
   overflow-x: hidden;
@@ -58,7 +58,7 @@ nav ul li {
 nav ul li a {
   color: #000 !important;
   font-size: 1.2em;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .navbar-2-links {
@@ -151,6 +151,7 @@ ul.navbar-nav.ml-auto{
   border: 1px solid #888;
   width: 30%;
   margin-right: 100%;
+  font-family: 'Playfair Display', serif;
 }
 
 @media screen and (max-width:700px) {
@@ -351,7 +352,9 @@ ul li::marker {
 }
 
 
-
+ul li a*{
+font-family:'Playfair Display', serif;
+}
  
 
   
@@ -378,7 +381,7 @@ ul li::marker {
     /* font-family: 'Poppins', sans-serif; */
     /* background: radial-gradient(rgb(229, 209, 235), rgb(245, 199, 241)); */
     /* font-family: 'Roboto', sans-serif; */
-    /* font-family: 'Playfair Display', serif; */
+     font-family: 'Playfair Display', serif; 
 }
 
 html{
