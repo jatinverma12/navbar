@@ -159,6 +159,18 @@ ul.navbar-nav.ml-auto{
   }
 }
 
+@media (max-width: 767px) {
+  .modal-backdrop { 
+      display: none !important;
+  }
+  #myModalDiv {
+      display: none !important;
+  }
+  .modal-dialog {
+      display: none !important;
+  }
+}
+
 /* The Close Button */
 .close1 {
   color: #aaaaaa;

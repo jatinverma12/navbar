@@ -139,7 +139,7 @@ secondButton.addEventListener("click",function(){
 
       
 })
-console.log($(window).width());
+
 
  // Get the modal
  var modal = document.getElementById("myModal1");
@@ -152,10 +152,13 @@ console.log($(window).width());
  var span = document.getElementsByClassName("close1")[0];
 
  // When the user clicks the button, open the modal 
- btn.onclick = function () {
-   modal.style.display = "block";
- }
+
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
  
+ 
+
  if($(window).width() <=768)
  {
   btn2.onclick = function () {
