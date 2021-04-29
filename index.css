@@ -6,6 +6,10 @@ body {
   letter-spacing: 2px;
   word-spacing: 2px;
   overflow-x: hidden;
+ 
+}
+a{
+  text-decoration: none;
 }
 
 html{
@@ -19,10 +23,6 @@ img {
 /* HEADER CSS STARTED */
 .iconsop a {
   margin: 0;
-}
-
-body {
-  font-size: 16px;
 }
 
 #logo.img {
@@ -46,10 +46,7 @@ body {
   
 }
 
-.navbar img {
-  width: 100px;
-  height: auto;
-}
+
 
 .navbar-nav {
   margin-right: auto;
@@ -79,49 +76,12 @@ nav ul li a {
 
 }
 
-
-
-@media (max-width: 800px) {
-  .c1 {
-    flex-basis: 50%;
-  }
-}
-
 .nav-link{
   padding: 0!important;
   margin: 0 1rem;
   font-size: 0.9em;
 }
 
-@media (max-width: 991px) {
-  .navbar-2-links {
-    margin: 0;
-  }
-  .iconsop {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .nav-link{
-    margin: 0;
-  }
-  #ic {
-    font-size: 24pt;
-  }
-}
-
-
-@media (max-width: 414px) {
-  #tbr {
-    display: none;
-  }
-  #logo {
-    margin: auto;
-  }
-  .hb1 {
-    margin: 0;
-  }
-}
 
 .icons {
   justify-content: space-between;
@@ -140,91 +100,222 @@ ul.navbar-nav.ml-auto{
   
 }
 
-
-
-
-@media only screen and (max-width: 767px) {
-  #tbf {
-    display: none;
-  }
+.navbar img {
+  width: 100px;
+  height: auto;
 }
 
 
-@media only screen and (max-width: 991px) {
- 
-  #logo {
+/* CUSTOM MODAL CSS */
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content1 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 27%;
+  margin-right: 0;
+}
+
+/* The Close Button */
+.close1 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul li::marker {
+  color: rgb(161 160 248);
+  font-size: 2.5rem;
+}
+.quantity input{
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+.quantity select {
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+.modtext{
+  display: flex;
+  height: 3rem;
+  margin-top: 0.25rem;
+}
+.modtext a{
+  background-color: #000;
+  color: #fff!important;
+  border-radius: 1rem;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .navbar-2-links {
     margin: 0;
   }
-}
- @media(max-width:1044px)
-{
-  .nav-link{
-    font-size: 1.38rem;
+  .iconsop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-} 
- @media (max-width: 950px) and (min-width:768px){
-.navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0!important;
-    /* padding-left: 0!important; */
-}
-.brand{
-  font-size: 1.2rem!important;
-}
+  .nav-link{
+    margin: 0;
+  }
+  #ic {
+    font-size: 24pt;
+  }
+  #tbr {
+    display: none;
+  }
+  #logo {
+    margin: auto;
+  }
+  i.fa.fa-user.usericon{
+    display: none;
+  }
+  i.fa.fa-search.searchicon{
+    display: block;
+    margin-right: 0.25rem;
+  }
+  i.fa.fa-shopping-cart.shopping{
+    margin-bottom: 0;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  i.fa.fa-heart{
+    margin-left: 0.25rem;
+  }
+  .brand{
+    margin-right: auto;
+  }
+
+  .navbar img {
+    width: 80px;
+    height: auto;
+  }
+    
 }
 
-
-
- @media (max-width: 829px) and (min-width:768px){
+@media screen and (min-width:769px) {
+  i.fa.fa-user.usericon{
+    display: block;
+  }
+  i.fa.fa-search.searchicon{
+    display: none;
+  }
+  i.fa.fa-shopping-cart.shopping{
+    margin-bottom: 0.85rem;
+  }
   .navbar-2-links {
     margin-left: -30px!important;
   } 
-
-  .nav-link{
-    font-size: 1rem;
-    font-weight: bold;
-  }
-
   .brand{
     font-size: 1.2rem!important;
   }
-  
-  } 
-@media(min-width:1080px) {
-  .hide{
-    margin-right:2rem;
-     font-weight: bold; 
-     font-size: 22px; margin-left:2rem; 
-     color:white;
-     background-color: black;
-      border: 2px solid black;
-      border-radius: 10px;
-       padding-top: 0px;
-       padding-bottom: 0px;
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0!important;
+    /* padding-left: 0!important; */
+}
+
+.navbar img {
+  width: 100px;
+  height: auto;
+}
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+  .modal-body{
+    font-size: 10px;
+  }
+  .modal-body img{
+    width: 40px;
+  }
+  .modal-body .container{
+    font-size: 10px!important;
+  }
+  .imgcontainer{
+    padding: 0;
+  }
+  .wimgcontainer img{
+    width:50px!important;
+    height: auto!important;
+  }
+   
+  .wcontent{
+    font-size: 8px;
+  }
+  .modal-body{
+    padding: 0;
+  }
+  .wmain{
+    padding: 0;
   }
 }
-  @media (max-width: 1100px) and (min-width:768px){
-    .navbar-brand1,.hide{
-      margin-right:2rem;
-      font-weight: bold; 
-      font-size: 1.1rem;
-       margin-left:2rem; 
-      color:white;
-      background-color: black;
-       border: 2px solid black;
-       border-radius: 10px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        margin-left: 0!important;
-        margin-right: 0!Important;
-    }
-  }
 
-  @media(max-width:940px)
-  {
-    .hide{
-      display: none
-    }
+@media screen and (min-width:992px) {
+  .imgcontainer .spimg{
+    width: 60px
   }
+  .imgcontainer .row{
+    padding: 0!important;
+  }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+  .wimgcontainer img{
+    width:100px!important;
+    height: auto!important;
+  }
+   
+  .wcontent{
+    font-size: 10px;
+  }
+  
+}
+
+
+
+ 
+
+  
+
+
+
+ 
+
+ 
 /* -----------navbar css end--------------- */
 
 
