@@ -58,7 +58,6 @@ nav ul li {
 nav ul li a {
   color: #000 !important;
   font-size: 1.2em;
-  font-family: 'Playfair Display', serif;
 }
 
 .navbar-2-links {
@@ -380,8 +379,9 @@ font-family:'Playfair Display', serif;
     /* font-family: 'Playfair Display', serif; */
     /* font-family: 'Poppins', sans-serif; */
     /* background: radial-gradient(rgb(229, 209, 235), rgb(245, 199, 241)); */
-    /* font-family: 'Roboto', sans-serif; */
-     font-family: 'Playfair Display', serif; 
+     font-family: Playfair Display, serif;
+     
+    
 }
 
 html{
