@@ -144,9 +144,11 @@
  // Get the modal
  var modal = document.getElementById("myModal1");
  var modal2=document.getElementById("myModal2");
+ var modal3=document.getElementById("myModal3");
  // Get the button that opens the modal
  var btn = document.getElementById("myBtn1");
  var btn2=document.getElementsByClassName("myBtn2")[0];
+ var btn3=document.getElementById("myBtn3");
 
  // Get the <span> element that closes the modal
  var span = document.getElementsByClassName("close1")[0];
@@ -157,7 +159,26 @@
     modal.style.display = "block";
   }
  
- 
+  var speed= 10;
+
+  function typeWriter() {
+   if ($(window).width()>768) {
+    btn3.onclick = function () {
+      modal3.style.display = "block";
+    }
+     
+     setTimeout(typeWriter, speed);
+   }
+   else
+   {
+     setTimeout(typeWriter, speed);
+   }
+ }
+
+
+ setInterval(() => {
+   typeWriter();
+}, 10);
 
  if($(window).width() <=768)
  {
@@ -180,6 +201,8 @@
    }
    else if(event.target==modal2)
    modal2.style.display="none";
+   else if(event.target==modal3)
+   modal3.style.display="none";
  }
 
  
